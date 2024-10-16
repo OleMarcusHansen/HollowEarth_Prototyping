@@ -1,0 +1,5 @@
+Assets/Scenes/LargeWorld.unity filter=lfs diff=lfs merge=lfs -text
+Assets/Prefabs/Models/hollow_ocean_fib.blend filter=lfs diff=lfs merge=lfs -text
+Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.12/.Runtime/libburst-llvm-16.dylib filter=lfs diff=lfs merge=lfs -text
+Library/Artifacts/b1/b10367b0c3b9ee61e22b273830266e02 filter=lfs diff=lfs merge=lfs -text

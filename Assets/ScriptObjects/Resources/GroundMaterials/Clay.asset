@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337d04d48958ed6408df3b867caa737b, type: 3}
+  m_Name: Clay
+  m_EditorClassIdentifier: 
+  groundMaterial: 4
+  item: 17
+  color: {r: 0.44313726, g: 0.36078432, b: 0.33333334, a: 0.39215687}
+  diggableBy: 0000000015000000
+  fillableBy: 0000000015000000

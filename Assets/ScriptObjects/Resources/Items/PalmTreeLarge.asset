@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66feb3af877a63148b0f336f3a312b84, type: 3}
+  m_Name: PalmTreeLarge
+  m_EditorClassIdentifier: 
+  itemId: 35
+  prefab: {fileID: 5634952929829732277, guid: 3e8f7bed364af5b448ca262047dee8e1, type: 3}
+  lodPrefab: {fileID: 2410094119493874503, guid: 9c93e8ffaf765084cb37994706b95b7b,
+    type: 3}
+  pickupable: 0
