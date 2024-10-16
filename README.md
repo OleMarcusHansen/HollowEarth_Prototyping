@@ -7,4 +7,4 @@ This project contains a prototype for a survival-exploration game set in a proce
 
 The globes are generated containing a square(ish) grid by using a fibonacci sphere approximation
 
-![Editor image of a grid](Images/grid1.png?raw=true)
+![Editor image of a grid](Images/grid2.png?raw=true)
