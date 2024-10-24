@@ -3131,6 +3131,21 @@ PrefabInstance:
       propertyPath: firmamentTileManager
       value: 
       objectReference: {fileID: 1103267799}
+    - target: {fileID: 6614434691138848252, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
+        type: 3}
+      propertyPath: jumpForce
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614434691138848252, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
+        type: 3}
+      propertyPath: jumpCooldown
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614434691138848252, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
+        type: 3}
+      propertyPath: groundedMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7593050983003395412, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
         type: 3}
       propertyPath: m_Name

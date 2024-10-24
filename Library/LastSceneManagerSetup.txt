@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/HugeWorld.unity
+- path: Assets/Scenes/SpookyWorld.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

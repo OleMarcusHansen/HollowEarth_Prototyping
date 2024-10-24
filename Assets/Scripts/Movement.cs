@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float sprintSpeed;
     [SerializeField] float crouchSpeed;
     [SerializeField] float airSpeed;
+    [SerializeField] float groundDrag = 5;
 
     [SerializeField] float maxSlopeAngle;
     RaycastHit hit;
@@ -25,7 +26,8 @@ public class Movement : MonoBehaviour
     public bool grounded = true;
 
     [SerializeField] float jumpForce = 25;
-
+    [SerializeField] float jumpCooldown = 1;
+    bool jumped;
 
     public MovementState state;
 
@@ -73,7 +75,7 @@ public class Movement : MonoBehaviour
         // Grounded Check
         grounded = false;
         Ray ray = new Ray(transform.position, -transform.up);
-        if (Physics.Raycast(ray, out hit, .2f, groundedMask))
+        if (Physics.Raycast(ray, out hit, .1f, groundedMask))
         {
             float angle = Vector3.Angle(transform.up, hit.normal);
             if (angle < maxSlopeAngle)
@@ -88,7 +90,7 @@ public class Movement : MonoBehaviour
         }
         if (grounded == true)
         {
-            rb.drag = 5;
+            rb.drag = groundDrag;
         }
         else
         {
@@ -119,7 +121,7 @@ public class Movement : MonoBehaviour
         Vector3 projectedDirection = Vector3.ProjectOnPlane(moveDirection, hit.normal).normalized;
         rb.AddForce(projectedDirection * moveSpeed * 100f, ForceMode.Force);
 
-        if (grounded)
+        if (grounded && !jumped)
         {
             SpeedControl();
         }
@@ -134,6 +136,16 @@ public class Movement : MonoBehaviour
 
     public void Jump()
     {
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        if (!jumped)
+        {
+            jumped = true;
+            rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+            Invoke(nameof(ResetJump), jumpCooldown);
+        }
+    }
+
+    void ResetJump()
+    {
+        jumped = false;
     }
 }

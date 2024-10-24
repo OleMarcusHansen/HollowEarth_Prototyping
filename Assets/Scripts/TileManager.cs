@@ -18,7 +18,7 @@ public class TileManager : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] GameObject markerPrefab;
 
-    int loadDistance = 50;
+    [SerializeField] int loadDistance = 50;
     public int renderDistance = 500;
 
     [SerializeField] int diameter = 3142;

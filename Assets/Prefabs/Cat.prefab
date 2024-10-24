@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4525894730633879482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0.5}
   m_LocalScale: {x: 0.4, y: 0.45, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -207,6 +207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3386ca145f953b54290c8da265299173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnVector: {x: 0, y: 0}
+  moveVector: {x: 0, y: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &7090721372877977624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,16 +227,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookSpeed: 7
   head: {fileID: 5409445492713791229}
-  walkSpeed: 2.3
+  walkSpeed: 2
   sprintSpeed: 5.1
   crouchSpeed: 1.5
   airSpeed: 0.1
+  groundDrag: 5
   maxSlopeAngle: 45
   groundedMask:
     serializedVersion: 2
     m_Bits: 1
   grounded: 1
   jumpForce: 50
+  jumpCooldown: 1
   state: 0
 --- !u!1 &7950921851536419344
 GameObject:
@@ -292,7 +300,7 @@ Transform:
   m_GameObject: {fileID: 9041859846537654622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0.5, z: -0.3}
   m_LocalScale: {x: 0.5, y: 0.6, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []

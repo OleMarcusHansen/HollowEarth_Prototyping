@@ -15,14 +15,6 @@ public class PlayerController : MonoBehaviour
 
     Movement movement;
 
-    public enum MovementState
-    {
-        walking,
-        sprinting,
-        crouching,
-        air
-    }
-
     private void Awake()
     {
         inputActions = new DefaultPlayerActions();

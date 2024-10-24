@@ -10,17 +10,36 @@ public class Gravity : MonoBehaviour
 
     private void Awake()
     {
-        firmament = GameObject.FindGameObjectWithTag("Firmament").GetComponent<GravityRepulsor>();
-        moon = GameObject.FindGameObjectWithTag("Moon").GetComponent<GravityAttractor>();
-        sun = GameObject.FindGameObjectWithTag("Sun").GetComponent<GravityAttractor>();
+        if (GameObject.FindGameObjectWithTag("Firmament"))
+        {
+            firmament = GameObject.FindGameObjectWithTag("Firmament").GetComponent<GravityRepulsor>();
+        }
+        if (GameObject.FindGameObjectWithTag("Moon"))
+        {
+            moon = GameObject.FindGameObjectWithTag("Moon").GetComponent<GravityAttractor>();
+        }
+        if (GameObject.FindGameObjectWithTag("Sun"))
+        {
+            sun = GameObject.FindGameObjectWithTag("Sun").GetComponent<GravityAttractor>();
+        }
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
     }
 
     private void FixedUpdate()
     {
-        firmament.Attract(rb);
-        moon.Attract(rb);
-        sun.Attract(rb);
+        if (firmament != null)
+        {
+            firmament.Attract(rb);
+        }
+
+        if (moon != null)
+        {
+            moon.Attract(rb);
+        }
+        if (sun != null)
+        {
+            sun.Attract(rb);
+        }
     }
 }

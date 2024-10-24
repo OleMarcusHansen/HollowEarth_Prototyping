@@ -8,15 +8,33 @@ public class Orienting : MonoBehaviour
 
     private void Awake()
     {
-        firmament = GameObject.FindGameObjectWithTag("Firmament").GetComponent<GravityRepulsor>();
-        moon = GameObject.FindGameObjectWithTag("Moon").GetComponent<GravityAttractor>();
-        sun = GameObject.FindGameObjectWithTag("Sun").GetComponent<GravityAttractor>();
+        if (GameObject.FindGameObjectWithTag("Firmament"))
+        {
+            firmament = GameObject.FindGameObjectWithTag("Firmament").GetComponent<GravityRepulsor>();
+        }
+        if (GameObject.FindGameObjectWithTag("Moon"))
+        {
+            moon = GameObject.FindGameObjectWithTag("Moon").GetComponent<GravityAttractor>();
+        }
+        if (GameObject.FindGameObjectWithTag("Sun"))
+        {
+            sun = GameObject.FindGameObjectWithTag("Sun").GetComponent<GravityAttractor>();
+        }
     }
 
     private void Update()
     {
-        firmament.Orient(transform);
-        moon.Orient(transform);
-        sun.Orient(transform);
+        if (firmament != null)
+        {
+            firmament.Orient(transform);
+        }
+        if (moon != null)
+        {
+            moon.Orient(transform);
+        }
+        if (sun != null)
+        {
+            sun.Orient(transform);
+        }
     }
 }

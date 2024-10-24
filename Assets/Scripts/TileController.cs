@@ -27,8 +27,14 @@ public class TileController : MonoBehaviour
             if (Vector3.Distance(transform.position, loadedPosition) > 25)
             {
                 loadedPosition = transform.position;
-                StartCoroutine(firmManager.LoadTiles());
-                StartCoroutine(moonManager.LoadTiles());
+                if (firmManager != null)
+                {
+                    StartCoroutine(firmManager.LoadTiles());
+                }
+                if (moonManager != null)
+                {
+                    StartCoroutine(moonManager.LoadTiles());
+                }
             }
         }
     }
