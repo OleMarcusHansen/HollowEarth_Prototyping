@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     noiseScale: 1
-    centre: {x: 5847.1914, y: 8198.226, z: 9367.045}
+    centre: {x: 1108.836, y: 9746.025, z: 433.94568}
     minValue: 0.6
-    minLatitude: 20
-    maxLatitude: 80
+    minLatitude: 10
+    maxLatitude: 90
     optLatitude: 50
     minAltitude: 20
     maxAltitude: 49

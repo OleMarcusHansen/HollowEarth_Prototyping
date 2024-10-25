@@ -2340,12 +2340,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0dab0409eeffafa4781adf5e22e6df5c, type: 2}
   - {fileID: 11400000, guid: 707968fdcf2cc7e4d9365a0fcc42f61e, type: 2}
   grassSettings:
-    noiseScale: 2
+    noiseScale: 1
     centre: {x: 100, y: 100, z: 100}
     minValue: 0.6
     minLatitude: 0
-    maxLatitude: 75
-    optLatitude: 25
+    maxLatitude: 90
+    optLatitude: 30
     minAltitude: 40
     maxAltitude: 51
     optAltitude: 49
@@ -2362,7 +2362,7 @@ MonoBehaviour:
     optAltitude: 466
     density: 0.99
   sandSettings:
-    noiseScale: 2
+    noiseScale: 1
     centre: {x: 0, y: 0, z: 0}
     minValue: 0.22
     minLatitude: 0
@@ -2384,7 +2384,7 @@ MonoBehaviour:
     optAltitude: 1000
     density: 0.99
   stoneSettings:
-    noiseScale: 2
+    noiseScale: 1
     centre: {x: 0, y: 0, z: 0}
     minValue: 0.8
     minLatitude: 0

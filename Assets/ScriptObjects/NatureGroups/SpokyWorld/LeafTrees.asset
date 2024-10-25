@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     noiseScale: 1
-    centre: {x: 0, y: 0, z: 0}
+    centre: {x: 4447.294, y: 7804.8374, z: 9250.994}
     minValue: 0.6
     minLatitude: 2
-    maxLatitude: 60
+    maxLatitude: 80
     optLatitude: 29
     minAltitude: 30
     maxAltitude: 50
@@ -31,4 +31,4 @@ MonoBehaviour:
     bias: 30
   - item: 2
     bias: 20
-  biasTotal: 0
+  biasTotal: 65
