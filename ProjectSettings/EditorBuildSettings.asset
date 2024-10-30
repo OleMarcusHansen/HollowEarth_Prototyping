@@ -5,13 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 5771a67147c382d40bafba1a9c21b05c
   - enabled: 0
     path: Assets/Scenes/LargeWorld.unity
     guid: add108aaa8c88824585a8e1849f16a32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HugeWorld.unity
     guid: 586c74743c6f46148a2c65b889e5b406
+  - enabled: 1
+    path: Assets/Scenes/SpookyMainMenu.unity
+    guid: 6df32d43fd7f99b449946604c8105c95
+  - enabled: 1
+    path: Assets/Scenes/SpookyWorld.unity
+    guid: ead6273a4c3a86949a92b9bb9b1ceefd
   m_configObjects: {}

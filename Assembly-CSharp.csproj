@@ -86,10 +86,15 @@
     <Compile Include="Assets\Scripts\TileController.cs" />
     <Compile Include="Assets\Scripts\AniFibSphere\AniFibSphere.cs" />
     <Compile Include="Assets\ScriptObjects\Scripts\RecipeMapping.cs" />
+    <Compile Include="Assets\Scripts\SpookyGameManager.cs" />
     <Compile Include="Assets\ScriptObjects\Scripts\GroundMaterialDefinition.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\SpookyMenuManager.cs" />
+    <Compile Include="Assets\Scripts\KillSphere.cs" />
+    <Compile Include="Assets\Scripts\DrownHandler.cs" />
     <Compile Include="Assets\Scripts\HungerHandler.cs" />
+    <Compile Include="Assets\Scripts\Page.cs" />
     <Compile Include="Assets\Scripts\PointToCenter.cs" />
     <Compile Include="Assets\ScriptObjects\Scripts\GroundMaterialMapping.cs" />
     <Compile Include="Assets\Scripts\Gravity.cs" />
@@ -109,6 +114,7 @@
     <Compile Include="Assets\ScriptObjects\Scripts\ItemDefinition.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Interactor.cs" />
+    <Compile Include="Assets\Scripts\DynamicSpookyProfile.cs" />
     <Compile Include="Assets\ScriptObjects\Scripts\ItemMapping.cs" />
   </ItemGroup>
   <ItemGroup>

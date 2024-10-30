@@ -9,6 +9,7 @@ public class NPCController : MonoBehaviour
     [SerializeField] Vector2 turnVector = new Vector2();
     [SerializeField] Vector2 moveVector = new Vector2();
 
+    [SerializeField] Transform player;
     [SerializeField] Vector3 targetPosition = Vector3.zero;
 
     bool sneak;
@@ -51,10 +52,11 @@ public class NPCController : MonoBehaviour
         movement.Turn(turnVector);
 
         //LookForTarget();
-        if (targetPosition == Vector3.zero || Vector3.Distance(targetPosition, transform.position) < 2)
+        /*if (targetPosition == Vector3.zero || Vector3.Distance(targetPosition, transform.position) < 2)
         {
             RandomTarget();
-        }
+        }*/
+        targetPosition = player.position;
 
         FindRotation();
 

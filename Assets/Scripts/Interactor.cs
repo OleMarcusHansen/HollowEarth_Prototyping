@@ -154,15 +154,18 @@ public class Interactor : MonoBehaviour
     void SpawnGroundItem(ItemId item, int rotation)
     {
         //firmTileManager.tileDatas[tileObject.id].itemSlot = new ItemData(item, rotation);
-        firmTileManager.tileDatas[tileObject.id].AddItem(depth, new ItemData(item, rotation));
+        if (item != ItemId.None)
+        {
+            firmTileManager.tileDatas[tileObject.id].AddItem(depth, new ItemData(item, rotation));
 
-        if (itemObject == null)
-        {
-            itemObject = tileObject.SpawnItem(itemMap.GetItemDefinition(item).prefab, rotation);
-        }
-        else
-        {
-            itemObject = itemObject.SpawnItem(itemMap.GetItemDefinition(item).prefab, rotation);
+            if (itemObject == null)
+            {
+                itemObject = tileObject.SpawnItem(itemMap.GetItemDefinition(item).prefab, rotation);
+            }
+            else
+            {
+                itemObject = itemObject.SpawnItem(itemMap.GetItemDefinition(item).prefab, rotation);
+            }
         }
 
         groundItem = item;

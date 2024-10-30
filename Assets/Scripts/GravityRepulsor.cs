@@ -37,6 +37,7 @@ public class GravityRepulsor : MonoBehaviour
 
         direction = direction.normalized;
 
+        //Debug.Log(force);
         body.AddForce(force * direction);
     }
     public void Orient(Transform body, bool instant = false)
@@ -59,7 +60,8 @@ public class GravityRepulsor : MonoBehaviour
         }
         else
         {
-            body.rotation = Quaternion.Slerp(body.rotation, targetRotation, Mathf.Abs(force) / 5 * Time.deltaTime);
+            //body.rotation = Quaternion.Slerp(body.rotation, targetRotation, Mathf.Abs(force) / 5 * Time.deltaTime);
+            body.rotation = Quaternion.Slerp(body.rotation, targetRotation, 56 / 5 * Time.deltaTime);
         }
     }
 }

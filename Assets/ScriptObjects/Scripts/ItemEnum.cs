@@ -37,5 +37,6 @@ public enum ItemId
     PalmTreeYoung = 34,
     PalmTreeLarge = 35,
     SwampTree = 36,
-    SwampTreeYoung = 37
+    SwampTreeYoung = 37,
+    Page = 38
 }
