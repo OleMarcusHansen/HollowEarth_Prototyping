@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class KillSphere : MonoBehaviour
 {
     [SerializeField] Animator deathCam;
+    [SerializeField] GameObject deathScreen;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,8 +16,14 @@ public class KillSphere : MonoBehaviour
 
             Camera.main.enabled = false;
             deathCam.gameObject.SetActive(true);
-            Invoke(nameof(SendToMenu), 2);
+            Invoke(nameof(OpenDeathScreen), 2);
         }
+    }
+
+    void OpenDeathScreen()
+    {
+        deathScreen.SetActive(true);
+        Invoke(nameof(SendToMenu), 2);
     }
 
     void SendToMenu()
