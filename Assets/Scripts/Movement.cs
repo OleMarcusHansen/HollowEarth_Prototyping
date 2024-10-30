@@ -119,7 +119,15 @@ public class Movement : MonoBehaviour
         //Vector2 moveVector = inputActions.Player.Move.ReadValue<Vector2>();
         moveDirection = transform.forward * moveVector.y + transform.right * moveVector.x;
         Vector3 projectedDirection = Vector3.ProjectOnPlane(moveDirection, hit.normal).normalized;
-        rb.AddForce(projectedDirection * moveSpeed * 100f, ForceMode.Force);
+
+        float multiplier = 100f;
+
+        if (moveVector.y < 0)
+        {
+            multiplier = 50f;
+        }
+
+        rb.AddForce(projectedDirection * moveSpeed * multiplier, ForceMode.Force);
 
         if (grounded && !jumped)
         {

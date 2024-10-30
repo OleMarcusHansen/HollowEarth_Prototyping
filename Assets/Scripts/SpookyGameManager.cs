@@ -19,6 +19,7 @@ public class SpookyGameManager : MonoBehaviour
 
     public static SpookyGameManager singleton;
 
+    [SerializeField] AudioSource pageSound;
 
     void Start()
     {
@@ -55,6 +56,8 @@ public class SpookyGameManager : MonoBehaviour
 
         pagesCollected++;
         pagesText.text = pagesCollected.ToString();
+
+        pageSound.Play();
 
         if (pagesCollected >= pages.Length)
         {
