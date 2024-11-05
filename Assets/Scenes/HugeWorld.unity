@@ -1598,6 +1598,7 @@ MonoBehaviour:
   player: {fileID: 8939749229922287780}
   markerPrefab: {fileID: 5895602589611413292, guid: 84898bbb8322798438952741bb53a022,
     type: 3}
+  loadDistance: 50
   renderDistance: 500
   diameter: 3142
   radius: 1000
@@ -1798,6 +1799,55 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1208418772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208418774}
+  - component: {fileID: 1208418773}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1208418773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208418772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: f349f82888f5b81449f1974ed2dc3b77, type: 2}
+--- !u!4 &1208418774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208418772}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.192905, y: 22.961002, z: 27.685574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1256063047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,6 +1885,7 @@ MonoBehaviour:
   player: {fileID: 8939749229922287780}
   markerPrefab: {fileID: 5895602589611413292, guid: 84898bbb8322798438952741bb53a022,
     type: 3}
+  loadDistance: 50
   renderDistance: 500
   diameter: 315
   radius: 50
@@ -3116,6 +3167,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1374688922447712177, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4558306208170114385, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
         type: 3}
       propertyPath: moon
@@ -3620,3 +3676,4 @@ SceneRoots:
   - {fileID: 1291038996}
   - {fileID: 426771133}
   - {fileID: 2056044006718785489}
+  - {fileID: 1208418774}
