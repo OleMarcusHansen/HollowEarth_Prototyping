@@ -513,17 +513,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b8b70d06773f19043a11aeab0362c64c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8b70d06773f19043a11aeab0362c64c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8b70d06773f19043a11aeab0362c64c,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8b70d06773f19043a11aeab0362c64c,
         type: 3}
@@ -533,7 +533,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b8b70d06773f19043a11aeab0362c64c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8b70d06773f19043a11aeab0362c64c,
         type: 3}
@@ -3334,7 +3334,7 @@ PrefabInstance:
     - target: {fileID: 8939749229492699305, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -40
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 8939749229492699305, guid: 1e8c93b646427db4b9b2dffbdba95ca5,
         type: 3}
@@ -4156,8 +4156,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7090721372877977624, guid: 9117a8ba6aa3cd242b5bd9611a33875a,
         type: 3}
+      propertyPath: airSpeed
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090721372877977624, guid: 9117a8ba6aa3cd242b5bd9611a33875a,
+        type: 3}
+      propertyPath: lookSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090721372877977624, guid: 9117a8ba6aa3cd242b5bd9611a33875a,
+        type: 3}
       propertyPath: walkSpeed
-      value: 1.8
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 9136046965820494380, guid: 9117a8ba6aa3cd242b5bd9611a33875a,
         type: 3}
@@ -5310,7 +5320,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.45
+  m_Radius: 0.55
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2108958019
 MonoBehaviour:

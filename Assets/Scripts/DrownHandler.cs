@@ -26,7 +26,7 @@ public class DrownHandler : MonoBehaviour
             {
                 drownedText.SetActive(true);
                 playerController.enabled = false;
-                playerController.GetComponent<Movement>().enabled = false;
+                playerController.GetComponent<Rigidbody>().isKinematic = true;
                 monster.SetActive(false);
                 Invoke(nameof(SendToMenu), 4);
             }

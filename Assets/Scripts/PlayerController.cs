@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     void StateHandler()
     {
-        if (inputActions.Player.Crouch.IsPressed())
+        if (movement.grounded && inputActions.Player.Crouch.IsPressed())
         {
             movement.ChangeState(Movement.MovementState.crouching);
         }
