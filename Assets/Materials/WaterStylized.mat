@@ -112,7 +112,7 @@ Material:
     - _RefractionScale: 100
     - _RefractionSpeed: 0.05
     - _RefractionStrength: 1
-    - _Smoothness: 0.7
+    - _Smoothness: 0.8
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -126,7 +126,7 @@ Material:
     - _Color: {r: 0.16353682, g: 0.33934498, b: 0.7075471, a: 0.92156863}
     - _DeepWater: {r: 0, g: 0.16942617, b: 0.5188679, a: 0.78431374}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0, g: 0.11177454, b: 0.33962262, a: 0.39215687}
+    - _FoamColor: {r: 0, g: 0.20440263, b: 0.6132076, a: 0.39215687}
     - _ShallowWater: {r: 0.24007648, g: 0.4180904, b: 0.7830188, a: 0.39215687}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
