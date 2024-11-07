@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Swamptrees
   m_EditorClassIdentifier: 
   settings:
-    noiseScale: 1
-    centre: {x: 0, y: 0, z: 0}
+    noiseScale: 2
+    centre: {x: 8621.981, y: 768.68304, z: 6156.81}
     minValue: 0.6
     minLatitude: 5
     maxLatitude: 70
@@ -35,4 +35,4 @@ MonoBehaviour:
     bias: 2
   - item: 11
     bias: 1
-  biasTotal: 0
+  biasTotal: 14
