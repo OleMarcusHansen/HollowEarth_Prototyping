@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     noiseScale: 2
-    centre: {x: 8621.981, y: 768.68304, z: 6156.81}
+    centre: {x: 6852.166, y: 9724.835, z: 8191.1494}
     minValue: 0.6
     minLatitude: 5
     maxLatitude: 70
@@ -22,7 +22,7 @@ MonoBehaviour:
     minAltitude: 999
     maxAltitude: 1002
     optAltitude: 1001
-    density: -0.5
+    density: -0.4
   groundMaterialMaxIndex: 4
   natureItems:
   - item: 37
