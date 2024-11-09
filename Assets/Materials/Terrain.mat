@@ -114,7 +114,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _NoiseAmount: 0.5
-    - _NoiseCutOff: 0.65
+    - _NoiseCutOff: 0.55
     - _NoiseScale: 1.5
     - _NoiseWeakness: 40
     - _OcclusionStrength: 1

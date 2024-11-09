@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638576942051509111
-    m_Hash: 611196386
+      ticks: 638667866420914692
+    m_Hash: 1474688681
   m_LockFileStatus:
     m_FilePath: C:/Users/olema/UnityProjects/HollowEarth_Prototyping/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638576942051544269
-    m_Hash: 84891192
+      ticks: 638667866420939728
+    m_Hash: 1758939547
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,86 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/olema/UnityProjects/HollowEarth_Prototyping/Packages
 m_EditorVersion: 2022.3.18f1 (d29bea25151d)
 m_ResolvedPackages:
+- packageId: com.jimmycushnie.noisynodes@https://github.com/JimmyCushnie/Noisy-Nodes.git
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.0
+  source: 5
+  resolvedPath: C:\Users\olema\UnityProjects\HollowEarth_Prototyping\Library\PackageCache\com.jimmycushnie.noisynodes@38d18b868b
+  assetPath: Packages/com.jimmycushnie.noisynodes
+  name: com.jimmycushnie.noisynodes
+  displayName: Noisy Nodes
+  author:
+    name: 
+    email: 
+    url: 
+  category: Shaders
+  type: 
+  description: Various noise nodes for Unity Shader Graph
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.shadergraph
+    version: 7.1.8
+  resolvedDependencies:
+  - name: com.unity.shadergraph
+    version: 14.0.10
+  - name: com.unity.render-pipelines.core
+    version: 14.0.10
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.terrain
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.searcher
+    version: 4.9.2
+  keywords:
+  - shader graph
+  - noise
+  - perlin
+  - simplex
+  - voronoi
+  - white noise
+  - 3D noise
+  - 2D noise
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.nol1fe.delaunator@https://github.com/nol1fe/delaunator-sharp.git?path=DelaunatorSharp.Unity
   testable: 0
   isDirectDependency: 1
@@ -176,11 +256,15 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
+    - 2.5.2
     compatible:
     - 2.2.0
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
+    - 2.5.2
     recommended: 2.2.0
     deprecated: []
   dependencies: []
@@ -291,11 +375,13 @@ m_ResolvedPackages:
     - 3.0.27
     - 3.0.28
     - 3.0.31
+    - 3.0.34
     compatible:
     - 3.0.27
     - 3.0.28
     - 3.0.31
-    recommended: 3.0.31
+    - 3.0.34
+    recommended: 3.0.34
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -556,6 +642,9 @@ m_ResolvedPackages:
     - 1.8.2
     - 1.9.0
     - 1.10.0
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
     compatible:
     - 1.7.0
     - 1.8.0-pre.1
@@ -565,6 +654,9 @@ m_ResolvedPackages:
     - 1.8.2
     - 1.9.0
     - 1.10.0
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
     recommended: 1.7.0
     deprecated: []
   dependencies:
@@ -682,9 +774,15 @@ m_ResolvedPackages:
     - 1.1.0-pre.1
     - 1.1.0-pre.3
     - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    - 1.1.3
     compatible:
     - 1.1.0
-    recommended: 1.1.0
+    - 1.1.1
+    - 1.1.2
+    - 1.1.3
+    recommended: 1.1.3
     deprecated: []
   dependencies:
   - name: com.unity.editorcoroutines
@@ -1321,18 +1419,18 @@ m_ResolvedPackages:
     recommended: 1.7.6
     deprecated: []
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -1494,11 +1592,13 @@ m_ResolvedPackages:
     - 1.9.1
     - 1.9.2
     - 1.9.4
+    - 1.9.5
     compatible:
     - 1.9.1
     - 1.9.2
     - 1.9.4
-    recommended: 1.9.4
+    - 1.9.5
+    recommended: 1.9.5
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -3743,6 +3843,7 @@ m_ResolvedPackages:
     - 1.8.15
     - 1.8.16
     - 1.8.17
+    - 1.8.18
     compatible:
     - 1.8.12
     - 1.8.13
@@ -3750,7 +3851,8 @@ m_ResolvedPackages:
     - 1.8.15
     - 1.8.16
     - 1.8.17
-    recommended: 1.8.17
+    - 1.8.18
+    recommended: 1.8.18
     deprecated: []
   dependencies:
   - name: com.unity.mathematics

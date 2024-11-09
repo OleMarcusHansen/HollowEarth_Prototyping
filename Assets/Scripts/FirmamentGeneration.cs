@@ -293,7 +293,7 @@ public class FirmamentGeneration : MonoBehaviour
 
             if (tileManager.tileDatas[i].groundMaterial[0] == GroundMaterial.Dirt || tileManager.tileDatas[i].groundMaterial[0] == GroundMaterial.Grass)
             {
-                if (tileManager.vertices[i].magnitude > shapeSettings.radius) // change to mudfilter
+                if (tileManager.vertices[i].magnitude >= shapeSettings.radius) // change to mudfilter
                 {
                     tileManager.tileDatas[i].SetGroundMaterial(GroundMaterial.Mud);
                 }
