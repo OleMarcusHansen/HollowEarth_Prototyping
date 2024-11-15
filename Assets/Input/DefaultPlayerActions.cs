@@ -134,6 +134,15 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""d9042a59-b7b7-42e0-a95e-0c2439723051"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -475,6 +484,17 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4e97fac1-602a-4b77-9c17-0018a135f326"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1074,6 +1094,7 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
         m_Player_Decrease = m_Player.FindAction("Decrease", throwIfNotFound: true);
         m_Player_Moon = m_Player.FindAction("Moon", throwIfNotFound: true);
         m_Player_Firmament = m_Player.FindAction("Firmament", throwIfNotFound: true);
+        m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1159,6 +1180,7 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Decrease;
     private readonly InputAction m_Player_Moon;
     private readonly InputAction m_Player_Firmament;
+    private readonly InputAction m_Player_Menu;
     public struct PlayerActions
     {
         private @DefaultPlayerActions m_Wrapper;
@@ -1175,6 +1197,7 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
         public InputAction @Decrease => m_Wrapper.m_Player_Decrease;
         public InputAction @Moon => m_Wrapper.m_Player_Moon;
         public InputAction @Firmament => m_Wrapper.m_Player_Firmament;
+        public InputAction @Menu => m_Wrapper.m_Player_Menu;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1220,6 +1243,9 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
             @Firmament.started += instance.OnFirmament;
             @Firmament.performed += instance.OnFirmament;
             @Firmament.canceled += instance.OnFirmament;
+            @Menu.started += instance.OnMenu;
+            @Menu.performed += instance.OnMenu;
+            @Menu.canceled += instance.OnMenu;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1260,6 +1286,9 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
             @Firmament.started -= instance.OnFirmament;
             @Firmament.performed -= instance.OnFirmament;
             @Firmament.canceled -= instance.OnFirmament;
+            @Menu.started -= instance.OnMenu;
+            @Menu.performed -= instance.OnMenu;
+            @Menu.canceled -= instance.OnMenu;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1454,6 +1483,7 @@ public partial class @DefaultPlayerActions: IInputActionCollection2, IDisposable
         void OnDecrease(InputAction.CallbackContext context);
         void OnMoon(InputAction.CallbackContext context);
         void OnFirmament(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

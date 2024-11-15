@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] TileManager moonTileManager;
 
     Movement movement;
+
+    [SerializeField] GameObject menu;
 
     private void Awake()
     {
@@ -55,6 +58,28 @@ public class PlayerController : MonoBehaviour
         {
             movement.Jump();
         }
+    }
+
+    //move to menu manager script
+    public void Menu(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (menu.activeInHierarchy)
+            {
+                menu.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+            else
+            {
+                menu.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+            }
+        }
+    }
+    public void Leave()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     void Update()

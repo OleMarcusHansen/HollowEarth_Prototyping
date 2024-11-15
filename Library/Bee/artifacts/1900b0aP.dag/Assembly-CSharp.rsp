@@ -367,6 +367,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerStats.cs"
 "Assets/Scripts/PointToCenter.cs"
+"Assets/Scripts/SettingsDropdown.cs"
 "Assets/Scripts/ShapeSettings.cs"
 "Assets/Scripts/SlotObject.cs"
 "Assets/Scripts/SphereGeneration.cs"
